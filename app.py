@@ -67,13 +67,17 @@ st.markdown(
 )
 
 
-
-
+st.write("Ask a business question regarding BSL data in simple english. For Example: ")
+st.write("- Show me the total spend of 4G users month wise.")
+st.write("- How many VoLTE calls were made last year?")
+st.write("- What is the average duration of VoLTE calls per customer?")
+st.write("- List all customers who have a 4G capable handset.")
+st.write("- Which tariff type has the highest total spend?")
+st.write("- Summary of tariff spends")
 
 
 # Create a text input box for the user to enter a prompt
-prompt = st.text_input("Ask a question (e.g., 'Show me all customers who made a purchase in the last month')", "")
-
+prompt = st.text_input("ENTER QUERY:")
 client = OpenAI(api_key=openai_api_key)
 # Generate some text based on the user's input
 def generate_text(prompt):

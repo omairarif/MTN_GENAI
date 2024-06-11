@@ -11,11 +11,21 @@ import os
 #import ENV
 load_dotenv()
 
-openai_api_key = os.getenv("API_KEY")
-database_url = os.getenv("DATABASE_URL")
-db_user = os.getenv("DATABASE_USER")
-db_pwd = os.getenv("DATABASE_PWD")
+#openai_api_key = os.getenv("API_KEY")
+#database_url = os.getenv("DATABASE_URL")
+#db_user = os.getenv("DATABASE_USER")
+#db_pwd = os.getenv("DATABASE_PWD")
 
+
+openai_api_key = st.secrets["API_KEY"]
+database_url = st.secrets["DATABASE_URL"]
+db_user = st.secrets["DATABASE_USER"]
+db_pwd = st.secrets["DATABASE_PWD"]
+
+
+
+print(db_user)
+print(db_pwd)
 print(database_url)
 
 # Function to convert image to base64
@@ -193,7 +203,7 @@ connection = pymysql.connect(
 host=database_url,
 user=db_user,
 password=db_pwd,
-database='sql12713262'
+database='sql12713295'
 )
 
 

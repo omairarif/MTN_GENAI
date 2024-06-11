@@ -1,0 +1,6 @@
+[theme]
+primaryColor="#FFCC00"  # MTN yellow
+backgroundColor="#FFFFFF"  # white background
+secondaryBackgroundColor="#F0F2F6"  # light grey for contrast
+textColor="#000000"  # black text
+font="sans serif"
